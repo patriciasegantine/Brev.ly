@@ -3,7 +3,7 @@ services:
     image: bitnami/postgresql:latest
     restart: unless-stopped
     env_file:
-      - ./server/.env
+      - .env
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
