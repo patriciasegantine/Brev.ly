@@ -14,9 +14,6 @@ concurrency:
   group: client-deploy-main
   cancel-in-progress: false
 
-env:
-  SOURCE_DIST: 'dist'
-
 jobs:
   test:
     name: Test client
@@ -119,8 +116,6 @@ jobs:
           aws-region: ${{ vars.AWS_REGION }}
 
       - name: Upload to S3
-        id: s3-deploy
-
         run: |
-          aws s3 sync ${{SOURCE_DIST}} s3://${{vars.AWS_S3_BUCKET}} --delete
+          aws s3 sync dist s3://${{ vars.AWS_S3_BUCKET }} --delete
           echo "✅ Deploy completed successfully!"
