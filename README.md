@@ -4,6 +4,8 @@ Brev.ly is a full-stack URL shortening and management platform that allows users
 
 It combines a React front end with a Fastify API, focusing on performance, scalability, and a clean user experience.
 
+![Brev.ly preview](./client/public/preview.png)
+
 ---
 
 ## 🧩 Overview
@@ -81,4 +83,5 @@ This project was developed as part of a postgraduate programme, with a focus on 
 
 ## 👩‍💻 Author
 
-Created by **Patricia Segantine** — Frontend Engineer
+Created by **Patricia Segantine** — Frontend Engineer  
+[LinkedIn](https://linkedin.com/in/patriciasegantine) · [Portfolio](https://patriciasegantine.vercel.app/)
