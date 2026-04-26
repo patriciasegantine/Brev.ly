@@ -9,6 +9,7 @@ on:
 
 jobs:
   test:
+    name: Test server 🧪
     runs-on: ubuntu-latest
 
     services:
@@ -48,6 +49,7 @@ jobs:
           DATABASE_URL: postgresql://postgres:postgres@localhost:5432/brevly_test
 
   build:
+    name: Build server 🧱
     runs-on: ubuntu-latest
     needs: test
 
