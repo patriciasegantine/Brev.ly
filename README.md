@@ -39,6 +39,8 @@ The project is structured as a monorepo with two main applications:
 - Tailwind CSS
 - shadcn/ui
 - Zod
+- React Query
+- React Hook Form
 
 ### Back end
 - Fastify
@@ -53,6 +55,7 @@ The project is structured as a monorepo with two main applications:
 - ESLint & Prettier
 - Vitest
 - dotenv
+- GitHub Actions (CI/CD)
 
 ---
 
@@ -64,6 +67,7 @@ The project is structured as a monorepo with two main applications:
 - Link management (list and delete)
 - Access tracking (click count)
 - CSV export for reporting
+- Automated deploy via GitHub Actions (AWS S3 + CloudFront)
 
 ---
 
@@ -83,5 +87,5 @@ This project was developed as part of a postgraduate programme, with a focus on 
 
 ## 👩‍💻 Author
 
-Created by **Patricia Segantine** — Frontend Engineer  
+Created by **Patricia Segantine** — Frontend Developer  
 [LinkedIn](https://linkedin.com/in/patriciasegantine) · [Portfolio](https://patriciasegantine.vercel.app/)
