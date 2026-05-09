@@ -125,10 +125,10 @@ jobs:
           IMAGE_TAG: ${{ github.sha }}
         run: |
           IMAGE_URI="$ECR_REGISTRY/$ECR_REPOSITORY"
-          docker build -t "$IMAGE_URI:$IMAGE_TAG" -t "$IMAGE_URI:latest" -f server/Dockerfile ./server
-          docker push "$IMAGE_URI:$IMAGE_TAG"
-          docker push "$IMAGE_URI:latest"
-          echo "image_uri=$IMAGE_URI:$IMAGE_TAG" >> "$GITHUB_OUTPUT"
+          SHORT_SHA="${IMAGE_TAG::7}"
+          docker build -t "$IMAGE_URI:$SHORT_SHA" -f server/Dockerfile ./server
+          docker push "$IMAGE_URI:$SHORT_SHA"
+          echo "image_uri=$IMAGE_URI:$SHORT_SHA" >> "$GITHUB_OUTPUT"
 
       - name: Trigger App Runner deployment
         env:
