@@ -1,4 +1,4 @@
-name: Web CI
+name: Client CI - PR
 
 on:
   pull_request:
